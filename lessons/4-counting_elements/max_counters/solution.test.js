@@ -26,3 +26,24 @@ test('One counter with one max counter operation - (1, [2]) should return [0]', 
 
   expect(output).toStrictEqual([0])
 })
+
+test('Performance with max N and M at 100000 with many max counter operations', () => {
+  const N = 100000
+
+  /**
+   * A is an array of [1, 2, 3, 4, 5, 100001, 100001, ...]
+   */
+  const A = new Array(100000)
+  A.fill(1)
+  A[99999] = 100001
+
+  const output = solution(N, A)
+
+  /**
+   * expected is an array of [5, 5, 5, ...] with 100000 elements.
+   */
+  const expected = new Array(100000)
+  expected.fill(99999)
+
+  expect(output).toStrictEqual(expected)
+})

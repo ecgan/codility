@@ -47,3 +47,11 @@ test('[1, 2000, 3] should return 0', () => {
 
   expect(output).toBe(0)
 })
+
+test('Element occurred more than once - [2, 2, 3, 3] should return 0', () => {
+  const A = [2, 2, 3, 3]
+
+  const output = solution(A)
+
+  expect(output).toBe(0)
+})

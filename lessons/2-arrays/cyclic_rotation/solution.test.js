@@ -27,6 +27,15 @@ test('([1, 2, 3, 4], 4) should return [1, 2, 3, 4]', () => {
   expect(output).toStrictEqual([1, 2, 3, 4])
 })
 
+test('K is zero - ([1, 2, 3], 0) should return [1, 2, 3]', () => {
+  const A = [1, 2, 3]
+  const K = 0
+
+  const output = solution(A, K)
+
+  expect(output).toStrictEqual([1, 2, 3])
+})
+
 test('Empty array ([], 5) should return []', () => {
   const A = []
   const K = 5

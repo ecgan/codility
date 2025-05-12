@@ -6,4 +6,4 @@ Compute number of integers divisible by k in range [a..b].
 
 Difficulty: Medium
 
-Score: ...
+Score: 100%

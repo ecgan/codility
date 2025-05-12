@@ -6,4 +6,4 @@ Find a maximum sum of a compact subsequence of array elements.
 
 Difficulty: Easy
 
-Score: 53%
+Score: 100%
